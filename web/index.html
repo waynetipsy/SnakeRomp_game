@@ -100,5 +100,28 @@
       loadMainDartJs();
     }
   </script>
+     // Import the functions you need from the SDKs you need
+     import { initializeApp } from "firebase/app";
+     import { getAnalytics } from "firebase/analytics";
+     import { getFirestore } from "firebase/firestore";
+
+     // TODO: Add SDKs for Firebase products that you want to use
+     // https://firebase.google.com/docs/web/setup#available-libraries
+     
+     // Your web app's Firebase configuration
+     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+     const firebaseConfig = {
+       apiKey: "AIzaSyA4NF-wEOd73d3txKqUtW4YeZW6vnwXMT0",
+       authDomain: "snakeromp.firebaseapp.com",
+       projectId: "snakeromp",
+       storageBucket: "snakeromp.appspot.com",
+       messagingSenderId: "771124342642",
+       appId: "1:771124342642:web:b3383f1a10df2e4d8e37eb",
+       measurementId: "G-D9LW914BF9"
+     };
+     
+     // Initialize Firebase
+     const app = initializeApp(firebaseConfig);
+     const analytics = getAnalytics(app);
 </body>
 </html>
